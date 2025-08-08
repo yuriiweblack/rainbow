@@ -242,16 +242,16 @@ a{
 
 
 .pricing {
-    padding: 145px 0 160px;
+    padding: 80px 0 80px;
     background-color: #040548;
 }
 
 .pricing__title {
-    margin-bottom: 90px;
+    margin-bottom: 74px;
     color: #FFFFFF;
-    text-transform: uppercase;
-    font-size: 40px;
-    line-height: 46px;
+    /* text-transform: uppercase; */
+    font-size: 60px;
+    line-height: 75px;
     font-weight: semi-bold;
     letter-spacing: 0.4px;
 }
@@ -260,13 +260,14 @@ a{
     display: flex;
     justify-content: space-between;
     margin-bottom: 22px;
+    padding-bottom: 100px;
 
 }
 
 
 ul.pricing__item {
     background-color: white;
-    padding: 24px 12px 5px;
+    padding: 24px 12px 32px;
     text-align: center;
     width: 285px;
     border: 3px solid #5FC5A0;
@@ -282,6 +283,12 @@ ul.pricing__item {
     color: #242121;
     letter-spacing: 0.2px;
     /* margin-bottom: 30px; */
+}
+
+.pricing__item:nth-child(even) {
+    /* background-color: #FF972D; */
+    position: relative;
+    top: 100px;
 }
 
 .pricing__item .pricing__item-name {
@@ -330,7 +337,7 @@ ul.pricing__item {
 }
 
 .pricing__item-programing::before {
-    background-image: url(../images/price/icons8-ноутбук-45.png);
+    background-image: url(../images/price/item-4.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -380,6 +387,22 @@ sup {
     padding-left: 25px;
 }
 
+.pricing__item-preference{
+    position: relative;
+}
+
+.pricing__item-preference::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px double #5FC5A0;
+    left: 10px;
+    top: 6px;
+    border-radius: 50%;
+}
+
+
 .pricing__item-link {
     margin-top: 22px;
     display: inline-block;
@@ -409,6 +432,10 @@ sup {
     top:24px;
     width: 26px;
     height: 18px;
+}
+
+.about {
+    padding:0 0 40px;
 }
 
 .about__all{
