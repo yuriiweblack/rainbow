@@ -618,7 +618,7 @@ sup {
 
 
 .contact{
-    padding: 50px 0 80px;
+    padding: 56px 0 80px;
     background-color: #040548;
     color: #FFFFFF;
 }
@@ -630,6 +630,7 @@ sup {
 .contact__info{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .contact__details{
@@ -649,6 +650,8 @@ sup {
     line-height: 38px;
     font-weight: 700; */
 }
+
+
 
 .contact-title{
     font-size: 32px;
@@ -890,6 +893,112 @@ sup {
 
 svg fill{
     color: 5FC5A0;
+}
+
+
+/* --- Footer Styles --- */
+.footer {
+    background: #04064b;
+    color: #fff;
+    padding: 40px 0 20px;
+    font-family: inherit;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #5FC5A0;
+    text-decoration: none;
+}
+
+.footer__logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer__menu {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+
+}
+
+
+.footer__menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer__menu a:hover {
+    color: #5FC5A0;
+}
+
+.footer__social {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__social a svg {
+    width: 28px;
+    height: 28px;
+    transition: fill 0.3s;
+}
+
+.footer__social a:hover svg path,
+.footer__social a:hover svg rect,
+.footer__social a:hover svg circle {
+    fill: #fff;
+    /* stroke: #fff; */
+}
+
+.footer__bottom {
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.7;
+    margin-top: 22px;
+}
+
+
+
+.footer__bottom-text{
+
+    padding: 5px 0;
+}
+
+@media (max-width: 700px) {
+    .footer__top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .footer__menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer__social {
+        gap: 12px;
+    }
 }
 
 
