@@ -916,6 +916,32 @@ sup {
     }
 } */
 
+@media (max-width: 900px) {
+    .gallery__title{
+        font-size: 48px;
+        line-height: 54px;
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery__title {
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.3px;
+        padding-bottom: 8px;
+    }
+    .gallery {
+        padding: 30px 0 30px;
+    }
+
+    
+    .card__inner {
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+}
+
 
 @media (max-width: 900px) {
     .contact__info {
@@ -944,9 +970,10 @@ sup {
     }
 
     .contact__title {
-        font-size: 28px;
-        line-height: 34px;
-        margin-bottom: 18px;
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0.3px;
+        padding-bottom: 8px;
     }
 
     .contact__details,
