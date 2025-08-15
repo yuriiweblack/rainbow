@@ -1,8 +1,10 @@
 *,
 *::after,
 *::before {
- box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
 
 body{
     /* font-family: "Montserrat", sans-serif; */
@@ -65,7 +67,6 @@ a{
     position: absolute;
     right: 50px;
     top: 30px;
-    /* transform: translateY(-50%); */
     width: 30px;
     height: 20px;
 }
@@ -94,11 +95,8 @@ a{
 }
 
 .header__top{
-    /* background-color: #FB7711; */
-    /* background-color: #5FC5A0; */
     padding: 18px 0;
     background: linear-gradient(to right, #FF972D, #F96400);
-
 }
 
 
@@ -170,8 +168,6 @@ a{
 .header__content-inner{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* padding: 50px 0; */
 }
 
 .header__content-text{
@@ -193,7 +189,6 @@ a{
     line-height: 34px;
     font-weight: 600;
     letter-spacing: 0.2px;
-    /* text-transform: capitalize; */
 }
 
 
@@ -202,7 +197,6 @@ a{
     line-height: 28px;
     font-weight: 600;
     letter-spacing: 0.2px;
-    /* text-transform: capitalize; */
     margin-bottom: 16px;
     padding-left: 50px;
     position: relative;
@@ -229,7 +223,6 @@ a{
     margin-top: 20px;
     max-width: 436px;
     text-align: end;
-    /* text-decoration: underline; */
 }
 
 .button-orange{
@@ -373,8 +366,6 @@ a{
 
 .about__offer-items {
     display: flex;
-    /* flex-direction: column;
-    gap: 30px; */
 }
 
 .about__right {
@@ -386,13 +377,6 @@ a{
     background-image: url('../images/about-img.png');
     background-repeat: no-repeat;
     background-position: top center;
-    /* background-size: contain; */
-    /* position: absolute;
-    right: 50px;
-    top: 30px;
-    width: 30px;
-    height: 20px; */
-
 }
 
 .about__right-text {
@@ -401,7 +385,6 @@ a{
     font-weight: 700;
     letter-spacing: 0.2px;
     margin-bottom: 30px;
-    /* text-align: center; */
     align-items: center;
     margin: 0 auto 30px;
 }
@@ -418,14 +401,13 @@ a{
 
 
 .pricing {
-    padding: 80px 0 80px;
+    padding: 56px 0 80px;
     background-color: #040548;
 }
 
 .pricing__title {
     margin-bottom: 74px;
     color: #FFFFFF;
-    /* text-transform: uppercase; */
     font-size: 60px;
     line-height: 75px;
     font-weight: semi-bold;
@@ -458,11 +440,10 @@ ul.pricing__item {
     line-height: 22px;
     color: #242121;
     letter-spacing: 0.2px;
-    /* margin-bottom: 30px; */
+  
 }
 
 .pricing__item:nth-child(even) {
-    /* background-color: #FF972D; */
     position: relative;
     top: 100px;
 }
@@ -479,8 +460,6 @@ ul.pricing__item {
 .pricing__item-name{
     position: relative;
     padding-left: 50px;
-    /* text-align: center; */
-    
 }
 
 .pricing__item-name::before {
@@ -523,7 +502,6 @@ ul.pricing__item {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    /* margin-bottom: 50px; */
     color: #FF972D;
     text-transform: uppercase;
     letter-spacing: 0.2px;
@@ -615,7 +593,6 @@ sup {
 }
 
 
-
 .gallery{
     padding: 40px 0 80px;
 }
@@ -650,7 +627,7 @@ sup {
       position: relative;
       width: 100%;
         }
-.card img {
+.card img{
         display: block;
         position: absolute;
         top: 0;
@@ -660,7 +637,6 @@ sup {
         object-fit: cover;
       }
     
-
 
 .contact{
     padding: 56px 0 80px;
@@ -693,7 +669,6 @@ sup {
 }
 
 
-
 .contact-title{
     font-size: 32px;
     line-height: 36px;
@@ -713,7 +688,6 @@ sup {
     content: "";
     background-image: url('../images/contact/phone.png');
     background-repeat: no-repeat;
-    /* background-size: contain; */
     position: absolute;
     left: 0;
     top: 6px;
@@ -725,7 +699,6 @@ sup {
     content: "";
     background-image: url('../images/contact/email.png');
     background-repeat: no-repeat;
-    /* background-size: contain; */
     position: absolute;
     left: 0;
     top: 6px;
@@ -737,7 +710,6 @@ sup {
     content: "";
     background-image: url('../images/contact/social.png');
     background-repeat: no-repeat;
-    /* background-size: contain; */
     position: absolute;
     left: 0;
     top: 6px;
@@ -749,7 +721,6 @@ sup {
     content: "";
     background-image: url('../images/contact/address.png');
     background-repeat: no-repeat;
-    /* background-size: contain; */
     position: absolute;
     left: 0;
     top: 6px;
@@ -915,15 +886,134 @@ sup {
 
 
 .footer__bottom-text{
-
     padding: 5px 0;
 }
+
+
+
+
+
+.portfolio__video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #F972Db;
+}
+
+
+
+/* adapting */
+
+/* @media (max-width: 400px) {
+    .gallery__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .card-image {
+        padding-top: 50%;
+    }
+} */
+
+
+@media (max-width: 900px) {
+    .contact__info {
+        flex-direction: column;
+        gap: 32px;
+        align-items: stretch;
+    }
+
+    .contact__details,
+    .contact__photo {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .contact__photo img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 32px 0 40px;
+    }
+
+    .contact__title {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 18px;
+    }
+
+    .contact__details,
+    .contact__photo {
+        padding: 12px 8px;
+        border-radius: 12px;
+    }
+
+    .contact-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .contact__phone-link,
+    .contact__email-link,
+    .contact__address-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .contact__social-list {
+        gap: 12px;
+        margin-top: 12px;
+    }
+
+    .contact__form-link {
+        font-size: 18px;
+        padding: 12px 18px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact__form-title {
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+
+    .contact__photo img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .contact-title {
+        font-size: 14px;
+    }
+
+    .contact__form-title {
+        font-size: 14px;
+    }
+}
+
+
+
 
 @media (max-width: 700px) {
     .footer__top {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 18px;
+        /* align-items: flex-start; */
+        gap: 20px;
+        /* text-transform: uppercase; */
     }
 
     .footer__menu {
@@ -932,7 +1022,8 @@ sup {
     }
 
     .footer__social {
-        gap: 12px;
+        gap: 20px;
+        margin: 0 auto;
     }
 }
 
