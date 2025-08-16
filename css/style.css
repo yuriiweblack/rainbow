@@ -1091,5 +1091,10 @@ sup {
     }
 }
 
+@media (max-width: 400px) {
+    .footer{
+        border-top: 0.1px solid #575454;
+    }
+}
 
 
