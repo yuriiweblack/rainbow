@@ -904,6 +904,36 @@ sup {
 
 
 /* adapting */
+@media (max-width: 1200px) {
+    .pricing {
+            padding: 40px 0 30px;
+            
+        }
+
+.pricing__title {
+    margin-bottom: 52px;
+}
+    .pricing__items {
+    /* display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    padding-bottom: 100px; */
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    justify-content: center;
+    }
+
+    .pricing__item:nth-child(even) {
+        position: none;
+        top: 0px;
+    }
+
+
+    .pricing__item {
+       margin-bottom: 30px;
+        
+    }
+}
 
 /* @media (max-width: 400px) {
     .gallery__title {
