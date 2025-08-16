@@ -954,13 +954,13 @@ sup {
     .contact__photo {
         width: 100%;
         max-width: 100%;
-        margin-bottom: 24px;
+        margin-bottom: 10px;
     }
 
     .contact__photo img {
         max-width: 100%;
         height: auto;
-        margin-bottom: 18px;
+        margin-bottom: 12px;
     }
 }
 
@@ -999,10 +999,19 @@ sup {
     }
 
     .contact__form-link {
-        font-size: 18px;
+        font-size: 20px;
         padding: 12px 18px;
-        width: 100%;
-        max-width: 100%;
+        max-width: 320px;
+    }
+
+
+    .contact__form-link::after {
+        content: "";
+        background-size: contain;
+        right: 30px;
+        top: 20px;
+        width: 26px;
+        height: 18px;
     }
 
     .contact__form-title {
@@ -1030,7 +1039,7 @@ sup {
     }
 
     .contact__form-title {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .contact__email,
