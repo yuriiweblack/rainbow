@@ -1016,6 +1016,17 @@ sup {
         font-size: 18px;
         line-height: 24px;
     }
+
+    .phone__link{
+        display: none;
+    }
+
+    .contact__social-link-viber{
+        z-index: 4;
+        position: relative;
+    }
+
+    
 }
 
 @media (max-width: 400px) {
