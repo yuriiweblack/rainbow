@@ -869,6 +869,11 @@ sup {
     color: #5FC5A0;
 }
 
+.footer__logo-text{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
 .footer__social {
     display: flex;
     gap: 18px;
@@ -983,7 +988,7 @@ sup {
         border: none;
         padding: 0;
         cursor: pointer;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         position: relative;
         z-index: 2;
     }
@@ -1084,6 +1089,11 @@ sup {
         /* padding-bottom: 100px; */
     }
 
+    .logo span{
+        font-size: 16px;
+        line-height: 18px;
+    }
+
 }
 
 
@@ -1136,7 +1146,7 @@ sup {
 
     .about__right-text {
         font-size: 22px;
-        line-height: 24px;
+        line-height: 28px;
         margin-bottom: 38px;
         align-items: center;
     }
@@ -1185,10 +1195,10 @@ sup {
         }
 
 .pricing__title {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 38px;
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
     letter-spacing: 0.4px;
 
 }
@@ -1298,8 +1308,8 @@ sup {
     .contact__phone-link,
     .contact__email-link,
     .contact__address-text {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 16px;
+        line-height: 26px;
     }
 
     .contact__social-list {
@@ -1344,11 +1354,11 @@ sup {
     }
 
     .contact-title {
-        font-size: 16px; 
+        font-size: 18px; 
     }
 
     .contact__form-title {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .contact__email,
