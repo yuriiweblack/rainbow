@@ -907,9 +907,6 @@ sup {
 }
 
 
-
-
-
 .portfolio__video{
     display: flex;
     justify-content: center;
@@ -919,9 +916,7 @@ sup {
 }
 
 
-
 /* adapting */
-
 
 @media (max-width: 1000px) {
     
@@ -936,9 +931,6 @@ sup {
     .menu__list{
         display: none;
     }
-
-
-
 }
 
 @media (max-width: 786px) {
@@ -988,7 +980,6 @@ sup {
         border: none;
         padding: 0;
         cursor: pointer;
-        /* margin-bottom: 10px; */
         position: relative;
         z-index: 2;
     }
@@ -1075,19 +1066,12 @@ sup {
 
     .button::after {
         content: "";
-        /* background-image: url('../images/arrow.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute; */
         right: 50px;
         top: 25px;
         width: 26px;
         height: 18px;
     }
 
-    .header__content-list{
-        /* padding-bottom: 100px; */
-    }
 
     .logo span{
         font-size: 16px;
@@ -1095,8 +1079,6 @@ sup {
     }
 
 }
-
-
 
 
 @media (max-width: 1200px) {
@@ -1203,10 +1185,6 @@ sup {
 
 }
     .pricing__items {
-    /* display: flex;
-    justify-content: space-between;
-    margin-bottom: 22px;
-    padding-bottom: 100px; */
     flex-wrap: wrap;
     padding-bottom: 40px;
     justify-content: center;
@@ -1224,16 +1202,6 @@ sup {
     }
 }
 
-/* @media (max-width: 400px) {
-    .gallery__title {
-        font-size: 20px;
-        line-height: 24px;
-    }
-
-    .card-image {
-        padding-top: 50%;
-    }
-} */
 
 @media (max-width: 900px) {
     .gallery__title{
@@ -1390,9 +1358,7 @@ sup {
 @media (max-width: 700px) {
     .footer__top {
         flex-direction: column;
-        /* align-items: flex-start; */
         gap: 20px;
-        /* text-transform: uppercase; */
     }
 
     .footer__menu {
